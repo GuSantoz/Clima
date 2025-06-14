@@ -1,0 +1,178 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    background-color: rgba(92, 84, 237, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #FDFDFD;
+    border-radius: 1rem;
+}
+
+/* Form */
+.form h3 {
+    margin-bottom: 1rem;
+}
+
+.form-input-container {
+    display: flex;
+}
+
+.form input {
+    padding: .8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: .8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+/* Clima */
+#weather-data {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#weather-data h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: .6rem;
+}
+
+#weather-data h2 i {
+    font-size: 1rem;
+    color: red;
+}
+
+#weather-data span{
+    margin: .6rem 0;
+}
+
+#weather-data .temperature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#min-temperature, #max-temperature {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+#min-temperature {
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+    color: rgb(208, 171, 243);
+}
+
+#max-temperature {
+    padding-left: 1rem;
+    color: orange;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    margin-bottom: -15px;
+}
+
+/* Descrição e ícone */
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Detalhes: Umidade e Vento */
+#details-container {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#humidity, #wind {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+#humidity {
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+}
+
+#country {
+    height: 15px;
+}
+
+/* #description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #humidity {
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+#details-container #wind {
+    padding-left: 1rem;
+} */
