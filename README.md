@@ -1,49 +1,37 @@
-Aqui está um `README.md` completo e explicativo para você adicionar ao seu projeto no GitHub:
-
----
-
-```markdown
 # 🌤️ Consulta Clima
 
 Este é um projeto simples de consulta do clima de cidades utilizando a [API OpenWeatherMap](https://openweathermap.org/) para exibir os dados meteorológicos e a [API Unsplash](https://unsplash.com/developers) para buscar imagens da cidade correspondente, tornando a experiência mais visual e atrativa.
 
 ## 📷 Demonstração
 
-> O usuário digita o nome de uma cidade e o site exibe:
+O usuário digita o nome de uma cidade e o site exibe:
 - Nome da cidade e país
 - Temperatura atual, mínima e máxima
 - Umidade e velocidade do vento
 - Ícone de clima atual
 - Uma imagem ilustrativa da cidade como plano de fundo
 
----
-
 ## 📁 Estrutura de Arquivos
 
-```
-
-📦 Projeto
-├── index.html            # Página principal
-├── style.css             # Estilos visuais
-├── script.js             # Lógica de consulta e exibição dos dados
-├── config.js             # Arquivo com chaves da API (não incluído no repositório)
-├── config.example.js     # Exemplo de configuração para o usuário
-└── .gitignore            # Ignora arquivos sensíveis como config.js
-
-````
-
----
+📦 Projeto  
+├── index.html  
+├── style.css  
+├── script.js  
+├── config.js  
+├── config.example.js  
+└── .gitignore  
 
 ## 🔐 Ocultação de Chaves (Segurança)
 
-As chaves das APIs são armazenadas no arquivo `config.js`, que **não é versionado** no Git graças à entrada no `.gitignore`. Para evitar o vazamento de dados sensíveis, você pode seguir este processo:
+As chaves das APIs são armazenadas no arquivo `config.js`, que não é versionado no Git graças à entrada no `.gitignore`. Para evitar o vazamento de dados sensíveis, você pode seguir este processo:
 
 1. Crie um arquivo chamado `config.js` na pasta `JS/` (caso não exista).
 2. Copie o conteúdo do `config.example.js`:
+
 ```js
 const WEATHER_KEY = "SUA_CHAVE_WEATHER_AQUI";
 const PHOTO_KEY = "SUA_CHAVE_UNSPLASH_AQUI";
-````
+```
 
 3. Substitua pelos seus dados reais:
 
@@ -52,9 +40,7 @@ const WEATHER_KEY = "sua_chave_real_openweather";
 const PHOTO_KEY = "sua_chave_real_unsplash";
 ```
 
-> O arquivo `config.js` é carregado antes do `script.js` no `index.html`, permitindo que suas chaves sejam acessadas por todo o código JavaScript sem expô-las no repositório.
-
----
+O arquivo `config.js` é carregado antes do `script.js` no `index.html`, permitindo que suas chaves sejam acessadas por todo o código JavaScript sem expô-las no repositório.
 
 ## ⚙️ Como usar
 
@@ -70,32 +56,19 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 
 4. Pronto! Basta digitar o nome de uma cidade para consultar o clima.
 
----
-
 ## 🛠️ Tecnologias Utilizadas
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* OpenWeatherMap API
-* Unsplash API
-* Font Awesome
-
----
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- OpenWeatherMap API
+- Unsplash API
+- Font Awesome
 
 ## 🚫 Aviso
 
 Este projeto é apenas para fins de aprendizado. Não exponha suas chaves públicas em deploys abertos sem proteção (ex: Vercel, Netlify). Prefira soluções com variáveis de ambiente no backend quando possível.
 
----
-
 ## 📄 Licença
 
 Este projeto está licenciado sob a licença MIT.
-
-```
-
----
-
-Se quiser, posso adaptar esse `README` para português formal ou com estilo mais descontraído. Deseja que ele já venha com instruções de deploy também (como GitHub Pages)?
-```
